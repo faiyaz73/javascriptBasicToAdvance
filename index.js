@@ -69,14 +69,72 @@
 // console.log(b.value);
 
 
-let objValue = {
-    "name":"faiyaz ansari",
-    "amount":4000,
-    "address":{"city":"patna"}
-}
 
-let objvalue1 = Object.assign({},objValue)
-console.log(objvalue1);
-console.log(objValue);
-let shallow = {...objValue}
-console.log("shallow copy",shallow)
+// shallow copy and deep copy 
+
+
+// let orignatObj = {
+//     name:"faiyaz",
+//     age:23,
+//     address:{city:"patna"}
+// }
+
+// // let shallowCopy = Object.assign({},orignatObj)
+
+// let shallowcopy = {...orignatObj}       // jab hum copy bnate h  orignal me update krte h to shallow copy  me v changes hota h 
+
+// orignatObj.address.city = "delhi"
+// console.log(shallowcopy)
+
+
+// let deepCopy = JSON.parse(JSON.stringify(orignatObj))
+// orignatObj.address.city = "kolkata"
+// console.log(deepCopy.address.city)
+
+
+
+// let x= 4
+// let y =5
+// x++
+//  x+= y
+// console.log(x)
+
+// let a = "faiyaz123";
+// let b = "aminaa";
+
+// console.log(a.length);
+// console.log(b.length);
+
+// if (a.length == b.length) {
+
+//   console.log(a + " ansari");
+
+//   if (a.length == b.length) {
+//     console.log("a and b are equal");
+//   } else {
+//     console.log("a and b are not equal");
+//   }
+
+// }
+
+
+// let a = "faiyaz123";
+// let b = "aminaa";
+
+// if (a.length == b.length) {
+//   console.log(a + " ansari");
+//   console.log("a and b are equal");
+// } else {
+//   console.log("a and b are not equal");
+// }
+
+
+let a = 0.1
+let a1 = String(a)
+let b = 0.2
+let b1 = String(b)
+
+let c = a+b
+let d = String(c)
+console.log(a1,b1,d)
+console.log(d == a1+b1)
