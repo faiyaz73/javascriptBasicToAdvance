@@ -52,3 +52,32 @@
 // console.log(ans)
 
 
+// second method create  function 
+
+// const data = function(num1,num2){
+//     let sum = num1+num2
+//     return sum
+    
+// }
+
+//  let va= data(34,6)
+//  console.log(va)
+
+
+// arrow function 
+
+
+// let add =(num1,num2)=>{
+//   return num1 + num2
+// }
+// console.log(add(34,2))
+
+
+//  jab   mai ek hi line me likhu to function to retunr ki jrurt nhi aur na hi {} 
+
+
+let Numbersum = (num1,num2) => num1+num2
+console.log(Numbersum(3,76))
+
+let NumberSquare = num => num*num
+console.log(NumberSquare(4))
