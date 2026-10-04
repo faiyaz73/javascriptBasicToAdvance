@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h3 class="head1">my name is faiyaz ansari</h3>
+<h3 id="head2">my name is faiyaz ansari</h3>
+<p>my name is faiyaz ansari</p>
+<h2 class="head1">Website Developer</h2>
+<h2 class="head1">Website Developer</h2>
+<h2 class="head1">Website Developer</h2>
+</body>
+<script>
+ let classelement = document.getElementsByClassName("head1");
+let Idelement = document.getElementById("head2");
+let tagName = document.getElementsByTagName("p");
+let design = document.querySelector(".head1")
+    classelement[0].style.color = "red";
+    Idelement.style.color = "blue";
+    tagName[0].style.color = "green";
+    // design.style.color="pink"
+
+let headlineElement = document.getElementsByClassName("head1")
+for(let i = 0; i < headlineElement.length; i++){
+    headlineElement[i].style.color = "red"
+}
+
+design.innerHTML = "hellow javascript"
+console.log(design)
+
+</script>
+</html>

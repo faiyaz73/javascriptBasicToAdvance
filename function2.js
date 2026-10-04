@@ -34,5 +34,27 @@
 
 
 
-let value = ()=>({"name":"faiyaz","ammount":3444,"adhar":32323})
-console.log(value())
+// let value = ()=>({"name":"faiyaz","ammount":3444,"adhar":32323})
+// console.log(value())
+
+// 4 tyeps of function 
+
+    // IIFE (imidiatally invoke function )
+
+    // (function greeding(){
+    //   console.log("data")
+    // })();
+
+    // (()=>{
+    //     console.log("hi")
+    // })()
+
+
+    (function data2(){
+        return{
+            "val1":445,
+            "department":"Developer"
+
+        }
+    })();
+    
