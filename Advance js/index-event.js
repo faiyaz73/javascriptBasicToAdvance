@@ -41,14 +41,41 @@
 //         "translate(-50%, -50%) rotateY(0deg)";
 // });
 
-let parent = document.getElementById("parents")
-let childrenData = parent.children
+// let parent = document.getElementById("parents")
+// let childrenData = parent.children
 
-for(let child  of childrenData){
-    child.addEventListener("click", () =>{
-     child.textContent = "I m Developer";
-    })
-}
+// for(let child  of childrenData){
+//     child.addEventListener("click", () =>{
+//      child.textContent = "I m Developer";
+//     })
+// }
+
+
+ let parent = document.getElementById("parents")
+ function handle(e){
+    e.target.textContent = "I m Developer"
+ }
+
+ parent.addEventListener('click',handle)
+//  parent.removeEventListener('click',handle)
 
 
 
+// const grandfather = document.getElementById("grandfather")
+// const parent = document.getElementById("parent")
+// const child = document.getElementById("child")
+
+// grandfather.addEventListener("click",()=>{
+//     console.log("Grandfather is Click ! ")
+// },true)
+// parent.addEventListener("click",(e)=>{
+//     console.log(e)
+//     console.log(e)
+//     console.log("parent is Click ! ")
+// },true)
+// child.addEventListener("click",(e)=>{
+//     console.log(e);
+//     e.stopPropagation()
+    
+//     console.log("child is Click ! ")
+// },true)
